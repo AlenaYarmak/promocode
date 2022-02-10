@@ -1,0 +1,84 @@
+@import 'vars';
+@import 'normalize';
+
+body {
+    background-color: $bg-color;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.promo {
+    background-color: $promo-color;
+    max-width: 1264px;
+    margin: 36px;
+    height: 530px;
+    border-radius: 40px;
+    color: $text-color;
+    text-align: center;
+    &__title {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 60px;
+        line-height: 84px;
+        padding-top: 70px;
+    }
+    &__text {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 18px;
+        margin-top: 27px;
+        margin-bottom: 60px;
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+    }
+    &-inp {
+        width: 468px;
+        height: 61px;
+        font-size: 18px;
+        background: rgba(255, 255, 255, 0.2);
+        color: $text-color;
+        border: none;
+        
+        border-radius: 33px;
+        margin-right: 20px;
+        padding-left: 33px;
+    }
+    &-btn {
+        width: 174px;
+        height: 61px;
+        font-size: 18px;
+        /* background-color: #FFC93D; */
+        color: $main-color;
+        font-weight: 900;
+        border: none;
+        border-radius: 33px;
+    }
+}
+.inactive-btn {
+    background-color: rgba(255, 201, 61, 0.5);
+}
+.active-btn {
+    background-color: #FFC93D;
+}
+::placeholder {
+    font-size: 16px;
+    color: $text-color;
+    opacity: 50%;
+    
+}
+.promo-inp input :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.promoCalc {
+    margin-top: 60px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
