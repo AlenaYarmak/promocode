@@ -12,14 +12,14 @@ let fourthPair = []
 
 button.setAttribute('disabled', true);
 promo.oninput = function () {
-    if (promo.value.length < 8) {
-        button.setAttribute('disabled', true);
-        button.classList.remove('active-btn');
-        button.classList.add('inactive-btn')
-    } else {
+    if (promo.value.length == 8) {
         button.removeAttribute('disabled');
         button.classList.remove('inactive-btn');
-        button.classList.add('active-btn')
+        button.classList.add('active-btn');
+    } else {
+        button.setAttribute('disabled', true);
+        button.classList.remove('active-btn');
+        button.classList.add('inactive-btn');
     }
 }
 
@@ -159,6 +159,8 @@ function inputNumber() {
         promo.value = '';
     }
     button.setAttribute('disabled', true);
+    button.classList.add('inactive-btn');
+    button.classList.remove('active-btn');
 }
 
 
