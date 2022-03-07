@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB",
     "sources": [
-        "../scss/normalize.scss"
+        "../sass/normalize.scss"
     ],
     "names": [],
     "file": "normalize.css"

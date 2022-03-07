@@ -82,3 +82,24 @@ input::-webkit-inner-spin-button {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
 }
+.description {
+    background-color: $promo-color;
+    border-radius: 40px;
+    color: $text-color;
+    max-width: 1264px;
+    height: 360px;
+    margin: 36px;
+    &__title {
+        padding-top: 25px;
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 20px;
+    }
+    &__text {
+        padding: 28px 200px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: justify;
+    }
+}
