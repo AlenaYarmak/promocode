@@ -28,3 +28,6 @@ After entering the promotional code into the input, the cost of the promotional 
 
 By the condition of the problem, when implementing the work of the promotional code, you cannot use the string data type. Also you must use vanilla JavaScript.
 
+## Used technologies
+
+JavaScript (one of the conditions of the test task), Sass preprocessor, Gulp.
