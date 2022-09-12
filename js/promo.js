@@ -108,42 +108,42 @@ function inputNumber() {
         console.log(parityFourthPair)
 
         if (parityFirstPair[0] == parityThirdPair[0] && parityFirstPair[0] == 'even' && paritySecondPair[0] == 'odd' && firstPair[0] < firstPair[1] && thirdPair[0] < thirdPair[1]) {
-            promoCalc.innerHTML = 'Value of promotion 2000 uah';
+            promoCalc.innerHTML = 'Value of promotion 2000 UAH';
             document.querySelector('.promo').appendChild(promoCalc);
             promo.value = '';
         }
         else if (parityFirstPair[0] == parityThirdPair[0] && parityFirstPair[0] == 'even' && paritySecondPair[0] == 'odd') {
-            promoCalc.innerHTML = 'Value of promo code 1000 uah';
+            promoCalc.innerHTML = 'Value of promo code 1000 UAH';
             document.querySelector('.promo').appendChild(promoCalc);
             promo.value = '';
         }
         else if (parityFirstPair[0] == parityFourthPair[0] && parityFirstPair[0] == 'even' && paritySecondPair[0] == 'odd' && firstPair[0] < firstPair[1] && fourthPair[0] < fourthPair[1]) {
-            promoCalc.innerHTML = 'Value of promo code 2000 uah';
+            promoCalc.innerHTML = 'Value of promo code 2000 UAH';
             document.querySelector('.promo').appendChild(promoCalc);
             promo.value = '';
         }
         else if (parityFirstPair[0] == parityFourthPair[0] && parityFirstPair[0] == 'even' && paritySecondPair[0] == 'odd') {
-            promoCalc.innerHTML = 'Value of promo code 1000 uah';
+            promoCalc.innerHTML = 'Value of promo code 1000 UAH';
             document.querySelector('.promo').appendChild(promoCalc);
             promo.value = '';
         }
         else if (paritySecondPair[0] == parityFourthPair[0] && paritySecondPair[0] == 'even' && parityThirdPair[0] == 'odd' && secondPair[0] < secondPair[1] && fourthPair[0] < fourthPair[1]) {
-            promoCalc.innerHTML = 'Value of promo code 2000 uah';
+            promoCalc.innerHTML = 'Value of promo code 2000 UAH';
             document.querySelector('.promo').appendChild(promoCalc);
             promo.value = '';
         }
         else if (paritySecondPair[0] == parityFourthPair[0] && paritySecondPair[0] == 'even' && parityThirdPair[0] == 'odd') {
-            promoCalc.innerHTML = 'Value of promo code 1000 uah';
+            promoCalc.innerHTML = 'Value of promo code 1000 UAH';
             document.querySelector('.promo').appendChild(promoCalc);
             promo.value = '';
         }
         else if (even > odd) {
-            promoCalc.innerHTML = 'Value of promo code 200 uah';
+            promoCalc.innerHTML = 'Value of promo code 200 UAH';
             document.querySelector('.promo').appendChild(promoCalc);
             promo.value = '';
         }
         else if (odd > even) {
-            promoCalc.innerHTML = 'Value of promo code 100 uah';
+            promoCalc.innerHTML = 'Value of promo code 100 UAH';
             document.querySelector('.promo').appendChild(promoCalc);
             promo.value = '';
         }
@@ -163,5 +163,13 @@ function inputNumber() {
     button.classList.remove('active-btn');
 }
 
+document.querySelector('.promo-inp').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        inputNumber();
+    }
+});
 
-
+document.querySelector('.promo-btn').addEventListener('click', (e) => {
+    inputNumber();
+});

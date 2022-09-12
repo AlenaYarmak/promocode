@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -32,30 +31,22 @@ body {
   color: #FFF;
   text-align: center;
 }
-
 .promo__title {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 60px;
   line-height: 84px;
   padding-top: 70px;
 }
-
 .promo__text {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
   margin-top: 27px;
   margin-bottom: 60px;
 }
-
 .promo__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .promo-inp {
   width: 468px;
   height: 61px;
@@ -67,7 +58,6 @@ body {
   margin-right: 20px;
   padding-left: 33px;
 }
-
 .promo-btn {
   width: 174px;
   height: 61px;
@@ -87,19 +77,13 @@ body {
   background-color: #FFC93D;
 }
 
-::-webkit-input-placeholder {
+::-moz-placeholder {
   font-size: 16px;
   color: #FFF;
   opacity: 50%;
 }
 
 :-ms-input-placeholder {
-  font-size: 16px;
-  color: #FFF;
-  opacity: 50%;
-}
-
-::-ms-input-placeholder {
   font-size: 16px;
   color: #FFF;
   opacity: 50%;
@@ -124,22 +108,19 @@ input::-webkit-inner-spin-button {
 
 .promoCalc {
   margin-top: 60px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 28px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
 }
 
 .describe {
   margin: 36px 60px;
   text-align: justify;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
 }
-
 .describe__text {
   padding-top: 2px;
 }
-
 .describe__footnote {
   padding-top: 27px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
